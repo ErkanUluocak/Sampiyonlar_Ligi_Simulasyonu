@@ -279,12 +279,15 @@ namespace Sampiyonlar_Ligi_Simulasyonu
         private void btnMacYaptir_Click(object sender, EventArgs e)
         {
             ButunGruplariKarsilastir();
-
             lstPuanSiralamasi.Items.Clear();
             btnMacYaptir.Enabled = false;
+            PuanSiralamasiniYazdir();
+            Son16Hesapla();
+        }
 
 
-
+        public void PuanSiralamasiniYazdir()
+        {
             for (int i = 0; i < gruplar.Count; i++)
             {
                 List<Takim> secilenGrup = gruplar[i];
@@ -302,9 +305,9 @@ namespace Sampiyonlar_Ligi_Simulasyonu
                     lstPuanSiralamasi.Items.Add((j + 1) + "- " + secilenTakim.TakimAdi + " Puan: \n" + secilenTakim.TakimPuan + " Attığı Gol : " + secilenTakim.ToplamAtilanGol + " Yediği Gol : " + secilenTakim.ToplamYenenGol + " Averaj : " + secilenTakim.Averaj);
                 }
             }
-
-            Son16Hesapla();
         }
+
+
 
         private static List<Takim> TakimlariSirala(List<Takim> secilenGrup)
         {
