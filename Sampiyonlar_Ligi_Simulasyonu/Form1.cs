@@ -14,7 +14,7 @@ namespace Sampiyonlar_Ligi_Simulasyonu
     {
 
 
-        //Torbaları tanımlama
+        
         List<Takim> torba1;
         List<Takim> torba2;
         List<Takim> torba3;
@@ -89,7 +89,7 @@ namespace Sampiyonlar_Ligi_Simulasyonu
 
 
    
-
+        
         public void Karistir(List<Takim> ts)
         {
             Random random = new Random();
@@ -184,7 +184,7 @@ namespace Sampiyonlar_Ligi_Simulasyonu
 
         public Takim KuraCek(List<Takim> torba, List<Takim> grup)
         {
-            //Bir takım torba içinden seçilip siliniyor.
+            
             int secilenTakimIndex = 0;
             for (int i = 0; i < torba.Count; i++)
             {
