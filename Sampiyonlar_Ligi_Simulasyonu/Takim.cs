@@ -50,7 +50,7 @@ namespace Sampiyonlar_Ligi_Simulasyonu
                 this.TakimPuan += 3;
 
             }
-            else if (atilanGol > yenenGol)
+            else if (atilanGol < yenenGol)
             {
                 karsitakim.TakimPuan += 3;
             }

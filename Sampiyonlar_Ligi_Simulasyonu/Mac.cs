@@ -13,32 +13,17 @@ namespace Sampiyonlar_Ligi_Simulasyonu
 
         public int Takim1AtilanGol { get; set; }
         public int Takim2AtilanGol { get; set; }
-        public bool IsReverse { get; set; }
-   
+
 
         public string GetMacAdi()
         {
-            if (IsReverse)
-            {
-                return Takim2.TakimAdi + "-" + Takim1.TakimAdi;
-            }
-            else
-            {
-                return Takim1.TakimAdi + "-" + Takim2.TakimAdi;
-            }
+            return Takim1.TakimAdi + "-" + Takim2.TakimAdi;
         }
 
 
         public string GetMacSonuc()
         {
-            if (IsReverse)
-            {
-                return Takim2AtilanGol + "-" + Takim1AtilanGol;
-            }
-            else
-            {
-                return Takim1AtilanGol + "-" + Takim2AtilanGol;
-            }
+            return Takim1AtilanGol + "-" + Takim2AtilanGol;
         }
     }
 }
