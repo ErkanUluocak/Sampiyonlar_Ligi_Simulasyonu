@@ -12,9 +12,7 @@ namespace Sampiyonlar_Ligi_Simulasyonu
 {
     public partial class Form1 : Form
     {
-
-
-        
+    
         List<Takim> torba1;
         List<Takim> torba2;
         List<Takim> torba3;
